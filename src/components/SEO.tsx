@@ -1,7 +1,7 @@
 import { NextSeo, NextSeoProps } from 'next-seo';
 
 type SEOProps = {
-  title: string;
+  title?: string;
   description: string;
 } & NextSeoProps;
 

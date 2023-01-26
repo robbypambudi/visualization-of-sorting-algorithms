@@ -47,6 +47,7 @@ const DrawVisualization = (
     .append('rect')
     .attr('x', (d, i) => i * (barWidth + barPadding))
     .attr('width', barWidth)
+    .attr('fill', 'green')
     .attr('y', (d) => yScale(d))
     .attr('height', (d) => CHART_HEIGHT - yScale(d))
     .on('mouseover', function (d, i) {
@@ -58,8 +59,8 @@ const DrawVisualization = (
           () => data.indexOf(i) * (barWidth + barPadding) + barWidth / 2
         )
         .attr('y', yScale(i) - 5)
-        .attr('fill', 'steelblue')
-        .attr('font-size', '14px')
+        .attr('fill', 'red')
+        .attr('font-size', '12px')
         .attr('text-anchor', 'middle');
     })
     .on('mouseleave', function () {
@@ -131,6 +132,7 @@ const startVisualization = (
   sortingPromise.then(() => {
     svg.selectAll('rect').style('fill', 'black');
     setStartSorting({ isSorting: false, timeInfo: timeInfo });
+    DrawVisualization(data, ref);
   });
 };
 

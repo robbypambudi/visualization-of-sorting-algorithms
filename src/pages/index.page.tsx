@@ -22,7 +22,7 @@ type SortTypeForm = {
 };
 
 const defaultValues: SortTypeForm = {
-  size: 200,
+  size: 50,
   sorting_type: 'bubble-sort',
 };
 
@@ -96,10 +96,10 @@ export default function Home() {
 
   return (
     <Layout>
-      <SEO title='Home' description='This is the home page' />
+      <SEO description='Sorting algorithms visualisation' />
       <main className='bg-gray-100 min-h-screen'>
         <section className='layout pt-6'>
-          <Typography variant='h2' as='h2' className='text-center'>
+          <Typography variant='h2' as='h2' className='text-center font-primary'>
             Sorting algorithms visualisation
           </Typography>
 
@@ -111,10 +111,11 @@ export default function Home() {
           >
             {({ register }) => {
               return (
-                <div className='grid grid-cols-2 gap-x-4'>
+                <div className='grid md:grid-cols-2 gap-x-4 grid-cols-1'>
                   <div>
                     <label htmlFor='size'>Size</label>
                     <select {...register('size')} className='w-full rounded-md'>
+                      <option value='50'>50</option>
                       <option value='200'>200</option>
                       <option value='300'>300</option>
                       <option value='500'>500</option>
@@ -141,7 +142,7 @@ export default function Home() {
         </section>
         <section>
           <div className='layout'>
-            <div className='flex justify-between mt-4'>
+            <div className='flex justify-between mt-4 md:flex-row flex-col'>
               <div>
                 <Typography variant='h3' as='h3'>
                   Time complexity
@@ -187,7 +188,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className='layout my-4 flex justify-center items-center'>
+        <section className='layout my-4 flex justify-center items-cente overflow-auto'>
           <svg ref={ref}></svg>
         </section>
         <div className='mt-10 mb-5'>

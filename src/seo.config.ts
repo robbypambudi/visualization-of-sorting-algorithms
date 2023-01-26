@@ -6,17 +6,17 @@ const config: DefaultSeoProps = {
   openGraph: {
     type: 'website',
     locale: 'en_IE',
-    url: 'https://www.robbypambudi.com/',
-    siteName: 'SiteName',
+    url: 'https://sorting.robbypambudi.com/',
+    siteName: "RobbyPambudi's Sorting Visualizer",
   },
   twitter: {
     handle: '@handle',
     site: '@site',
     cardType: 'summary_large_image',
   },
-  titleTemplate: '%s | RobbyPambudi',
+  titleTemplate: '%s | Sorting Visualizer',
   description: 'this is a description',
-  defaultTitle: 'RobbyPambudi',
+  defaultTitle: 'Sorting Visualizer',
   additionalLinkTags: [
     {
       rel: 'icon',
