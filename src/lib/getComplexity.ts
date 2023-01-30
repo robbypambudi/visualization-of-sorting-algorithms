@@ -20,6 +20,18 @@ export const getComplexity = (sortingAlgorithmName: SortingAlgorithms) => {
       return { time: `O(n log n)`, space: `O(1)` };
     case 'shell-sort':
       return { time: `O(n log n)`, space: `O(1)` };
+    case 'cocktail-sort':
+      return { time: `O(n^2)`, space: `O(1)` };
+    case 'gnome-sort':
+      return { time: `O(n^2)`, space: `O(1)` };
+    case 'comb-sort':
+      return { time: `O(n^2)`, space: `O(1)` };
+    case 'cycle-sort':
+      return { time: `O(n^2)`, space: `O(1)` };
+    case 'bogo-sort':
+      return { time: `O(n!)`, space: `O(1)` };
+    case 'stooge-sort':
+      return { time: `O(n^2.7095)`, space: `O(1)` };
     default:
       throw new Error(`Invalid sorting algorithm: ${sortingAlgorithmName}`);
   }

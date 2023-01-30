@@ -136,6 +136,12 @@ export default function Home() {
                       <option value='radix-sort'>Radix Sort</option>
                       <option value='bucket-sort'>Bucket Sort</option>
                       <option value='shell-sort'>Shell Sort</option>
+                      <option value='cocktail-sort'>Cocktail Sort</option>
+                      <option value='gnome-sort'>Gnome Sort</option>
+                      <option value='comb-sort'>Comb Sort</option>
+                      <option value='cycle-sort'>Cycle Sort</option>
+                      <option value='bogo-sort'>Bogo Sort</option>
+                      <option value='stooge-sort'>Stooge Sort</option>
                     </select>
                   </div>
                 </div>

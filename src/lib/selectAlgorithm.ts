@@ -1,5 +1,10 @@
+import bogoSort from '@/algorithms/bogoSort';
 import bubbleSort from '@/algorithms/bubbleSort';
 import bucketSort from '@/algorithms/bucketSort';
+import cocktailSort from '@/algorithms/cocktailSort';
+import combSort from '@/algorithms/combSort';
+import cycleSort from '@/algorithms/cycleSort';
+import gnomeSort from '@/algorithms/gnomeSort';
 import heapSort from '@/algorithms/heapSort';
 import insertionSort from '@/algorithms/insertionSort';
 import mergeSort from '@/algorithms/mergeSort';
@@ -7,6 +12,7 @@ import quickSort from '@/algorithms/quickSort';
 import radixSort from '@/algorithms/redixSort';
 import selectionSort from '@/algorithms/selectionSort';
 import shellSort from '@/algorithms/shellSort';
+import stoogeSort from '@/algorithms/stoogeSort';
 import { SortingAlgorithms } from '@/constant/sorting';
 
 type UpdateBarsFunctionType = (
@@ -53,6 +59,31 @@ const SelectAlgortihm = (
     case 'shell-sort':
       return async (updateBars) => {
         await shellSort(data, updateBars);
+      };
+    case 'cocktail-sort':
+      return async (updateBars) => {
+        await cocktailSort(data, updateBars);
+      };
+    case 'gnome-sort':
+      return async (updateBars) => {
+        await gnomeSort(data, updateBars);
+      };
+    case 'comb-sort':
+      return async (updateBars) => {
+        await combSort(data, updateBars);
+      };
+    case 'cycle-sort':
+      return async (updateBars) => {
+        await cycleSort(data, updateBars);
+      };
+    case 'bogo-sort':
+      return async (updateBars) => {
+        await bogoSort(data, updateBars);
+      };
+
+    case 'stooge-sort':
+      return async (updateBars) => {
+        await stoogeSort(data, updateBars);
       };
 
     default:
