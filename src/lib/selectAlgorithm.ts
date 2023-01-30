@@ -8,6 +8,8 @@ import gnomeSort from '@/algorithms/gnomeSort';
 import heapSort from '@/algorithms/heapSort';
 import insertionSort from '@/algorithms/insertionSort';
 import mergeSort from '@/algorithms/mergeSort';
+import pancakeSort from '@/algorithms/pancakeSort';
+import pigeonholeSort from '@/algorithms/pigeonholeSort';
 import quickSort from '@/algorithms/quickSort';
 import radixSort from '@/algorithms/redixSort';
 import selectionSort from '@/algorithms/selectionSort';
@@ -84,6 +86,14 @@ const SelectAlgortihm = (
     case 'stooge-sort':
       return async (updateBars) => {
         await stoogeSort(data, updateBars);
+      };
+    case 'pigeonhole-sort':
+      return async (updateBars) => {
+        await pigeonholeSort(data, updateBars);
+      };
+    case 'pancake-sort':
+      return async (updateBars) => {
+        await pancakeSort(data, updateBars);
       };
 
     default:

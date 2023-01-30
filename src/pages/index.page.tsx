@@ -142,6 +142,8 @@ export default function Home() {
                       <option value='cycle-sort'>Cycle Sort</option>
                       <option value='bogo-sort'>Bogo Sort</option>
                       <option value='stooge-sort'>Stooge Sort</option>
+                      <option value='pigeonhole-sort'>Pigeonhole Sort</option>
+                      <option value='pancake-sort'>Pancake Sort</option>
                     </select>
                   </div>
                 </div>

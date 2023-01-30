@@ -16,4 +16,5 @@ export type SortingAlgorithms =
   | 'bogo-sort'
   | 'stooge-sort'
   | 'bitonic-sort'
-  | 'pancake-sort';
+  | 'pancake-sort'
+  | 'pigeonhole-sort';

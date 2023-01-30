@@ -32,6 +32,13 @@ export const getComplexity = (sortingAlgorithmName: SortingAlgorithms) => {
       return { time: `O(n!)`, space: `O(1)` };
     case 'stooge-sort':
       return { time: `O(n^2.7095)`, space: `O(1)` };
+    case 'bitonic-sort':
+      return { time: `O(n log n)`, space: `O(1)` };
+    case 'pigeonhole-sort':
+      return { time: `O(n+k)`, space: `O(n+k)` };
+    case 'pancake-sort':
+      return { time: `O(n^2)`, space: `O(1)` };
+
     default:
       throw new Error(`Invalid sorting algorithm: ${sortingAlgorithmName}`);
   }
