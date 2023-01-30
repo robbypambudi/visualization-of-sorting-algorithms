@@ -5,17 +5,19 @@ const insertionSort = async (
   updateBars: (counter: number) => void
 ) => {
   for (let i = 1; i < array.length; i++) {
+    // Assign curr element as a key
+    const curr = array[i];
+    // Check the prev elements of key and move them one position ahead if they are greater than key
     let j = i - 1;
-    const temp = array[i];
-    while (j >= 0 && array[j] > temp) {
+    while (j >= 0 && array[j] > curr) {
       array[j + 1] = array[j];
       j--;
     }
-    array[j + 1] = temp;
+    // insert curr element to correct position
+    array[j + 1] = curr;
     updateBars(i);
-    await delay(2);
+    await delay(1);
   }
-  return array;
 };
 
 export default insertionSort;
