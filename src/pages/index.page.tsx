@@ -133,6 +133,9 @@ export default function Home() {
                       <option value='merge-sort'>Merge Sort</option>
                       <option value='quick-sort'>Quick Sort</option>
                       <option value='heap-sort'>Heap Sort</option>
+                      <option value='radix-sort'>Radix Sort</option>
+                      <option value='bucket-sort'>Bucket Sort</option>
+                      <option value='shell-sort'>Shell Sort</option>
                     </select>
                   </div>
                 </div>

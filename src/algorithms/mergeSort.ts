@@ -35,7 +35,7 @@ const merge = async (
   for (let i = 0; i < result.length; i++) {
     data[left + i] = result[i];
     updateBars(i);
-    await delay(1);
+    await delay(2);
   }
 };
 

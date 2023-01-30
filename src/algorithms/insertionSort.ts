@@ -16,7 +16,7 @@ const insertionSort = async (
     // insert curr element to correct position
     array[j + 1] = curr;
     updateBars(i);
-    await delay(1);
+    await delay(2);
   }
 };
 

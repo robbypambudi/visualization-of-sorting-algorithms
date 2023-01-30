@@ -18,6 +18,8 @@ export const getComplexity = (sortingAlgorithmName: SortingAlgorithms) => {
       return { time: `O(n^2)`, space: `O(n)` };
     case 'heap-sort':
       return { time: `O(n log n)`, space: `O(1)` };
+    case 'shell-sort':
+      return { time: `O(n log n)`, space: `O(1)` };
     default:
       throw new Error(`Invalid sorting algorithm: ${sortingAlgorithmName}`);
   }
