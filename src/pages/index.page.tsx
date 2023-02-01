@@ -203,7 +203,7 @@ export default function Home() {
           <svg ref={ref}></svg>
         </section>
         <div className='mt-10 mb-5'>
-          <p className='text-center'>Copyright RobbyPambudi</p>
+          <p className='text-center'>Copyright 2023 RobbyPambudi</p>
         </div>
       </main>
     </Layout>
